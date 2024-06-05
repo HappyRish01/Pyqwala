@@ -1,0 +1,21 @@
+.bg{
+    /* backgroundImage:
+        "url('https://www.paraggupta.com/wp-content/uploads/20220402152158CUET-.jpg')", */
+        /* height: "100vh"; */
+        /* margin-top: "5px"; */
+        /* font-Size: "5px"; */
+        background-Size: "inherit";
+        background-Repeat: "repeat";
+        opacity :0.69;
+        align-Self:'center';
+    
+}
+@media screen and (max-width: 768px){
+        
+       .bg{ width: 100vh;
+        height: auto;
+       }
+    #bgimage{max-width: 100%;
+    min-width: 200px;
+    }
+}
