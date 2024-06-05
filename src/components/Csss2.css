@@ -27,7 +27,7 @@
   }
   
   .navbar__item {
-    margin: 9px;
+    margin: 0.9rem;
     font-size:medium;
   }
   
@@ -48,6 +48,6 @@
      height: 10vh;
     }
   .navbar{max-width: 100vh;
-  min-width: 200px;
+  /* min-width: 500px; */
   }
   }
