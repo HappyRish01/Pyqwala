@@ -8,14 +8,16 @@
         background-Repeat: "repeat";
         opacity :0.69;
         align-Self:'center';
+        height:auto;
     
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1368px){
         
        .bg{ width: 100vh;
-        height: auto;
+        height: 100%;
+        margin-top: 100%;
        }
     #bgimage{max-width: 100%;
-    min-width: 200px;
+    min-width: 20vh;
     }
 }
