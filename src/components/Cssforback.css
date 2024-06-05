@@ -1,23 +1,18 @@
-.bg{
-    /* backgroundImage:
-        "url('https://www.paraggupta.com/wp-content/uploads/20220402152158CUET-.jpg')", */
-        /* height: "100vh"; */
-        /* margin-top: "5px"; */
-        /* font-Size: "5px"; */
-        background-Size: "inherit";
-        background-Repeat: "repeat";
-        opacity :0.69;
-        align-Self:'center';
-        height:auto;
-    
+.container {
+   background-size: contain;
+   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1368px){
-        
-       .bg{ width: 100vh;
-        height: 100%;
-        margin-top: 100%;
-       }
-    #bgimage{max-width: 100%;
-    min-width: 20vh;
-    }
+.imageClass{
+   width: 100%;
+}
+@media screen and (max-width: 768px){
+          
+   .container{ 
+       width: 100%;
+       height: 30vh;
+       margin-top: 35%;
+       display: flex; 
+
+   }
+ 
 }
