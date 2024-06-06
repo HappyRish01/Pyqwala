@@ -1,13 +1,16 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Back from './components/Back';
+import Card from './components/Card'
+
 
 function App() {
   return (
     <>
     <NavBar/>
-    <Back/>
+    <Card/>
+  
     </>
+  
   );
 }
 
