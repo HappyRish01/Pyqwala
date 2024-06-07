@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import SubjectPage from "./pages/SubjectPage";
+// import SubjectPage from "./pages/SubjectPage";
 import { AppContext } from './AppContext';
 import { useState } from "react";
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/subject" element={<SubjectPage />}/>
+            {/* <Route path="/subject" element={<SubjectPage />}/> */}
           </Routes>
         </div>
       </Router>
