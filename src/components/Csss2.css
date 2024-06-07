@@ -3,12 +3,10 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    background: linear-gradient(to right, #aa5717d4, #06693bbb); /* Example gradient colors */
-    color: rgb(28, 31, 31);
+    background: linear-gradient(to right, #254720d4, #588b638c); /* Example gradient colors */
+    color: rgb(250, 250, 253);
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-
-    
+    font-family:'Barlow' 
   }
   
   .navbar__brand {
@@ -29,7 +27,7 @@
           
     .navbar{
        width: 100%;
-       background-color: red;
+       /* background-color: red; */
      /* height: vh; */
     }
   .navbar{max-width: 100vh;
