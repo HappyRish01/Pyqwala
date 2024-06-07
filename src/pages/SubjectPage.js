@@ -26,13 +26,7 @@ function CardSample({ title }) {
 
 function SubjectPage() {
   return (
-    <div className="card-container">
-      <CardSample title="Physics" />
-      <CardSample title="Chemistry" />
-      <CardSample title="Mathematics" />
-      <CardSample title="Computer Science" />
-      {/* <CardSample title="" /> */}
-    </div>
+   <div>rIsh</div>
   );
 }
 
