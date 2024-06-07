@@ -13,26 +13,32 @@ const HumanitiesImg = "https://blogassets.leverageedu.com/blog/wp-content/upload
 
 const EnglishImg = "https://students-residents.aamc.org/sites/default/files/styles/scale_and_crop_850_x_472/public/GettyImages-1171913244.jpg?itok=HvZMBNFj"
 
-const GtImg = "https://firebasestorage.googleapis.com/v0/b/pyqs-4575a.appspot.com/o/assets%2FnewGTBG.jpg?alt=media&token=b8117930-c4e3-4f35-98a1-f786aeef34ad"
+const GT = "https://img.freepik.com/free-vector/intellectual-property-concept-with-brain-lightbulb_23-2148695133.jpg";
+const PheImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBFaZ8FixnGyVsMUOXBOrordgejgpM6m4-Q&s"
 
 
-function CardSample({ title, content , Image}) {
-  const {setStreamroute} = useContext(AppContext)
+function CardSample({ title  , Image}) {
+
+  const {setStreamroute , streamRoute} = useContext(AppContext)
 
   const handleClick = () => {
     setStreamroute(title)
-    // console.log()
+    console.log("hello")
   };
+
+
+  
+
   return (
-    <Link to="/subject" style={{ textDecoration: "none"}}>
+    <Link to={`/${title}`} style={{ textDecoration: "none"}}>
       <div className="card" onClick={handleClick} style={{backgroundImage: `url("${Image}")`}}>
-        <h2
+        <h1
           style={{
             padding: "25px",
           }}
         >
           {title}
-        </h2>
+        </h1>
       </div>
     </Link>
   );
@@ -56,7 +62,11 @@ function Card() {
       />
       <CardSample
         title="General Test"
-       Image={GtImg}
+       Image={GT}
+      />
+      <CardSample
+        title="Physical Education"
+       Image={PheImg}
       />
     </div>
   );

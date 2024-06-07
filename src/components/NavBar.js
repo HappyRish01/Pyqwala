@@ -3,17 +3,25 @@
 // import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react'
 import './Csss2.css';
-
+import { FaHome } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 export default function NavBar() {
+  // const handleFunc = () => {
+  //   <Link to={"/"}></Link>
+  // }
   return (
-    <div >
 
-      <nav className="navbar text-center" >
-      <div className="navbar__brand text-center ">PyqWalaDost</div>
-      
+
+   
+    <nav class="navbar">
+       <Link to={"/"} style={{position:'absolute',left:'10px', color: 'white',top:"10px"}}>
+        <FaHome size={30}/>
+       </Link>
+        <div class="navbar-text">
+            Pyq Wala Dost
+        </div>
     </nav>
-
-    </div>
+    
     
   )
 }
