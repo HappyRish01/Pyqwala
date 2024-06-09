@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 
  const bg = "https://static.vecteezy.com/system/resources/thumbnails/001/762/015/small/literature-books-stacked-vector.jpg"
+ 
 function CardSample({ title  , Image}) {
 
  
-    // const {setStreamroute } = useContext(AppContext)
+   
   
     const handleClick = () => {
-      // setStreamroute(title)
+     
     
     };
   

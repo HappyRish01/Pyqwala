@@ -1,0 +1,47 @@
+.carduu{
+    /* background-color: red; */
+    border-radius: 10px;
+    /* max-width: 75%; */
+    margin: 5px;
+    /* max-width: 300px; */
+    /* min-width: 300px; */
+    min-height:50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+
+
+}
+.carduu:active{
+    background-color: #48b865;
+}
+.carduu:hover{
+    cursor:pointer;
+}
+.card-container{
+    /* background-color: blue; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+}
+.logo{
+    size: 25;
+    margin-left: 5px;
+    color: #09ba15;
+    stroke-width: 8px;
+}
+.allcard{
+    margin-bottom: 50px;
+
+}
+.logoAll{
+    size: 32px;
+    color: rgb(99, 98, 98)
+
+}
+.logoLeft{
+    margin-left: 7px;
+}

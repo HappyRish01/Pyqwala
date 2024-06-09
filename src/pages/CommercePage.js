@@ -8,10 +8,10 @@ const Accimg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJD9Lp29V4
 const Bstimg = "https://static.vecteezy.com/system/resources/previews/014/688/770/non_2x/male-office-workers-are-studying-the-infographics-the-analysis-of-the-evolutionary-scale-illustration-of-business-graphics-distance-learning-and-education-vector.jpg" ;
 const Ecoimg = "https://static.vecteezy.com/system/resources/thumbnails/001/759/745/small/economics-books-and-graphs-vector.jpg" ;
 function CardSample({ title  , Image}) {
-    // const {setStreamroute } = useContext(AppContext)
+   
   
     const handleClick = () => {
-    //   setStreamroute(title)
+   console.log(title)
     
     };
   

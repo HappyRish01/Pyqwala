@@ -11,10 +11,10 @@ const Psy = "https://static.vecteezy.com/system/resources/thumbnails/005/661/870
 const Soc = "https://static.vecteezy.com/system/resources/thumbnails/001/759/771/small/sociology-books-and-supplies-vector.jpg";
 
 function CardSample({ title  , Image}) {
-    // const {setStreamroute } = useContext(AppContext)
+    
   
     const handleClick = () => {
-    //   setStreamroute(title)
+    
     
     };
   

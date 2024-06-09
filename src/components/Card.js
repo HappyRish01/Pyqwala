@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./cardcss.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 
@@ -19,11 +19,11 @@ const PheImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBFaZ8Fix
 
 function CardSample({ title  , Image}) {
 
-  const {setStreamroute , streamRoute} = useContext(AppContext)
+  const {setStreamroute } = useContext(AppContext)
 
   const handleClick = () => {
     setStreamroute(title)
-    console.log("hello")
+    // console.log("hello")
   };
 
 
@@ -35,6 +35,7 @@ function CardSample({ title  , Image}) {
         <h1
           style={{
             padding: "25px",
+            userSelect: 'none'
           }}
         >
           {title}
