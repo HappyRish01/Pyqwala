@@ -47,7 +47,7 @@ function CardSample({ title  , Image}) {
 
 function Card() {
   return (
-    <div className="card-container">
+    <div className="card-containerrr">
       <CardSample
         title="Language"
         Image={EnglishImg}

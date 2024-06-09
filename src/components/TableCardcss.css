@@ -29,6 +29,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: red; */
+    padding: 5px 10px;
     /* align-content: center; */
 }
 .logo{

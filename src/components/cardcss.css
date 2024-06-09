@@ -6,14 +6,16 @@ body, html {
     
 }
 
-.card-container {
+.card-containerrr {
+    
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
-    /* background-color: yellow; */
+    align-items: center;
+    justify-content: center;
+   
+
 
     padding: 20px;
-    /* background-color: red; */
 }
 .card:hover{
     cursor: pointer;
@@ -40,6 +42,7 @@ body, html {
     letter-spacing:3px;
     text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-color: white;
+    
 
 }
 
@@ -51,10 +54,17 @@ body, html {
 }
 
 @media screen and (min-width: 768px) {
-    .card-container {
-        flex-direction: row; /* Switch to horizontal layout on larger screens */
-        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    .card-containerrr {
+        flex-direction: row;
+        flex-wrap: wrap; 
         justify-content: center;
+        /* background-color: yellow; */
     }
 }
+/* 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
 

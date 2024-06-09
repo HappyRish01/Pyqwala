@@ -46,6 +46,8 @@ function App() {
             <Route path="/Humanities/Sociology" element={<TablePage />}/>
             <Route path="/Humanities/Economics" element={<TablePage />}/>
             <Route path="/General Test" element={<TablePage />}/>
+            <Route path="/Language" element={<LanguagePage />}/>
+            <Route path="/Language/English" element={<TablePage />}/>
             <Route path="/Physical Education" element={<TablePage />}/>
           </Routes>
         </div>

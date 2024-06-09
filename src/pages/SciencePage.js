@@ -43,7 +43,7 @@ export default function SciencePage() {
     <>
     <NavBar />
     
-    <div className="card-container">
+    <div className="card-containerrr">
 
         <CardSample title="Physics" Image={PHYimg}/>
         <CardSample title="Chemistry" Image={ChEimg}/>

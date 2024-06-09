@@ -36,7 +36,7 @@ export default function LanguagePage() {
   return (
     <>
     <NavBar />
-    <div className="card-container">
+    <div className="card-containerrr">
 
         <CardSample title="English" Image={bg}/>
       

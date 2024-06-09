@@ -45,13 +45,13 @@
   @media screen and (max-width: 768px){
           
     .navbar{
-       width: 100%;
+       width: 95%;
+       max-width: 100vh;
+    min-width: 200px;
        /* background-color: red; */
      /* height: vh; */
     }
-  .navbar{max-width: 100vh;
-  min-width: 200px;
-  }
+
   }
 
   .navbar-right-menu {

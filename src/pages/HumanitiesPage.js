@@ -39,7 +39,7 @@ export default function HumanitiesPage() {
     <>
     <NavBar />
     
-    <div className="card-container">
+    <div className="card-containerrr">
 
         <CardSample title="History" Image={His}/>
         <CardSample title="Political Science"Image={Pol}/>

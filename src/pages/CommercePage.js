@@ -11,7 +11,7 @@ function CardSample({ title  , Image}) {
    
   
     const handleClick = () => {
-   console.log(title)
+  //  console.log(title)
     
     };
   
@@ -36,7 +36,7 @@ export default function CommercePage() {
     <>
     <NavBar />
     
-    <div className="card-container">
+    <div className="card-containerrr">
 
         <CardSample title="Accounts" Image={Accimg}/>
         <CardSample title="Business Studies" Image={Bstimg}/>
