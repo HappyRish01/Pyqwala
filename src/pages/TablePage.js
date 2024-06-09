@@ -17,7 +17,7 @@ const Downloadallbtn = () => {
 
     }
   return (
-    <div className="carduu allcard" onClick={handleClick} style={{backgroundColor: '#ff3333'}}>
+    <div className="carduu allcard" onClick={handleClick} >
       <h1
         style={{
           userSelect: "none",
@@ -46,7 +46,7 @@ export default function TablePage() {
     <div className="card-container">
     <Downloadallbtn />
       <TableCard title="20.06.2023 Shift-III" />
-      <TableCard title="hello" />
+      <TableCard title="20.06.2023 Shift-II" />
     </div>
     </>
   );

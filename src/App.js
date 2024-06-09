@@ -22,9 +22,6 @@ function App() {
 
   return (
     <AppContext.Provider value={{streamRoute , setStreamroute , year , setYear , subjectRoute , setSubjectroute }}>
-    
-
-  
       <Router>
         <div>
           <Routes>
@@ -50,8 +47,6 @@ function App() {
             <Route path="/Humanities/Economics" element={<TablePage />}/>
             <Route path="/General Test" element={<TablePage />}/>
             <Route path="/Physical Education" element={<TablePage />}/>
-            
-            
           </Routes>
         </div>
       </Router>

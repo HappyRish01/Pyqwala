@@ -1,7 +1,10 @@
+body{
+    /* background-color: #f0e4d4; */
+}
 .carduu{
     /* background-color: red; */
     border-radius: 10px;
-    /* max-width: 75%; */
+    /* max-width: 600px; */
     margin: 5px;
     /* max-width: 300px; */
     /* min-width: 300px; */
@@ -9,12 +12,13 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #bce0f7;
     
 
 
 }
 .carduu:active{
-    background-color: #48b865;
+    background-color: #72c8fa;
 }
 .carduu:hover{
     cursor:pointer;
@@ -35,13 +39,32 @@
 }
 .allcard{
     margin-bottom: 50px;
+    background-color: #FF6650;
+    /* background-color: aliceblue; */
+    color:white
+
+}
+.allcard:active{
+    background-color: rgb(255, 72, 0);
 
 }
 .logoAll{
     size: 32px;
-    color: rgb(99, 98, 98)
+    color: rgb(250, 245, 245)
 
 }
 .logoLeft{
     margin-left: 7px;
+}
+@media  screen and (min-width: 768px) {
+    
+    .carduu{
+        width: 75%;
+        margin-left: 15%;
+        /* background-color: yellow; */
+    }
+    .card-container{
+        /* background-color: blue; */
+        justify-content: center;
+    }
 }
