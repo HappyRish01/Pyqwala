@@ -2,8 +2,7 @@ import React from 'react'
 import Card from '../components/Card'
 import NavBar from '../components/NavBar'
 // import TableCard from '../components/TableCard'
-
-import TablePage from './TablePage'
+import Footer from '../components/Footer'
 
 export default function HomePage() {
   return (
@@ -11,6 +10,7 @@ export default function HomePage() {
     <NavBar />
     <Card /> 
     {/* <TablePage /> */}
+    <Footer />
 
     </>
   )

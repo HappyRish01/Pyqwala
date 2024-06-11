@@ -10,8 +10,45 @@ import { AppContext } from "../AppContext";
 import { storageDB } from "../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 
-const Downloadallbtn = () => {
-  const handleClick = () => {};
+const Downloadallbtn = ({ year }) => {
+  const [ZipRoute , setZipRoute ] = useState('')
+
+  const location = useLocation();
+
+  useState(() => {
+    setZipRoute(`${year}/AllZip${location.pathname}/`);
+    
+  });
+
+  const handleAllDownload = (link) => {
+    if(link){
+      const downRef = document.createElement("a");
+      downRef.href = link;
+      downRef.target = "_blank"
+      downRef.download = "Allzip";
+      
+      document.body.appendChild(downRef)
+      downRef.click();
+      document.body.removeChild(downRef)
+    }
+  };
+  const handleClick = () => {
+    const handleFetch = async () => {
+      const storageRefee = ref(storageDB, ZipRoute);
+      const fileList = await listAll(storageRefee);
+      fileList.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          // console.log(url)
+          // setZipUrl(url)
+          // console.log(ZipUrl)
+          handleAllDownload(url)
+        });
+      });
+    };
+
+    handleFetch();
+  };
+
   return (
     <div className="carduu allcard" onClick={handleClick}>
       <h1
@@ -28,14 +65,17 @@ const Downloadallbtn = () => {
 };
 
 export default function TablePage() {
-  const { year } = useContext(AppContext);
-  // const [fileName , setFileName] = useState('')
+  const location = useLocation();
 
-  let location = useLocation();
-  let route;
+  const { year } = useContext(AppContext);
+  const [route, setRoute] = useState("");
+  // const [subjectName , setSubjectName] = useState('');
+
   useEffect(() => {
-    route = `${year}${location.pathname}/`;
-  });
+    setRoute(`${year}${location.pathname}/`);
+    
+    // console.log(route);
+  }, [year, location.pathname]);
 
   const [fileUrls, setFileUrls] = useState([]);
 
@@ -56,26 +96,20 @@ export default function TablePage() {
       });
     };
     fetchFiles();
-    });
-    
-   
-    
+  });
+
   return (
     <>
       <NavBar />
       <div className="card-container">
-        <Downloadallbtn />
-        {fileUrls.map((file , id) =>
-        (
-          
-          <TableCard title={ref(storageDB,file).name.split('.').slice(0, -1).join('.')} key ={id} />
+        <Downloadallbtn year={year} />
+        {fileUrls.map((file, id) => (
+          <TableCard
+            title={ref(storageDB, file).name.split(".").slice(0, -1).join(".")}
+            key={id}
+            link={file}
+          />
         ))}
-
-          
-
-
-
-        {/* <TableCard title="20.06.2023 Shift-II" /> */}
       </div>
     </>
   );

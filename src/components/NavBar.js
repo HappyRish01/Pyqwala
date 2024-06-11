@@ -43,6 +43,7 @@ export default function NavBar() {
         }}
       >
         <FaHome size={30} />
+        
       </Link>
       <div className="navbar-text">Pyq Wala Dost</div>
 

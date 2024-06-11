@@ -19,8 +19,8 @@ body, html {
 }
 .card:hover{
     cursor: pointer;
-    color: rgb(255, 145, 0);
-    box-shadow: 0 4px 15px rgba(255, 162, 2, 0.689);
+    color: #0b669f;
+    box-shadow: 0 4px 15px rgba(2, 33, 52,0.923);
     border-color: orange;
 
 }

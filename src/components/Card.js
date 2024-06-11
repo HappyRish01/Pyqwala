@@ -23,6 +23,7 @@ function CardSample({ title  , Image}) {
 
   const handleClick = () => {
     setStreamroute(title)
+    // document.title = {title}
     // console.log("hello")
   };
 
