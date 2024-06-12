@@ -9,7 +9,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { AppContext } from "../AppContext";
 import { useContext } from "react";
 
-export default function NavBar() {
+export default function NavBar({isAboutLoaded}) {
   const {year , setYear} = useContext(AppContext)
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -32,7 +32,7 @@ export default function NavBar() {
 
 
   return (
-    <nav className="navbar">
+    <nav className={!isAboutLoaded? `navbar`: `navbarRed`}>
       <Link
         to={"/"}
         style={{
@@ -50,13 +50,13 @@ export default function NavBar() {
      
 
       
-      <div className="navbar-right-menu">
-        <button className="dropbtn" onClick={toggleDropdown}>{year}<IoMdArrowDropdown/></button>
+      <div className="navbar-right-menu" onClick={toggleDropdown}>
+        <button className={!isAboutLoaded? `dropbtn`: `dropbtnRedf`} >{year}<IoMdArrowDropdown/></button>
         <div className={`dropdown-content ${dropdownVisible ? 'show' : ''}`}>
           <Link to={"/"} style={{textDecoration: 'none'}}>
-          <h3 onClick={()=> {setYear(2022)}} >2022</h3>
-          <h3 onClick={()=> {setYear(2023)}}>2023</h3>
-          <h3 onClick={()=> {setYear(2024)}} >2024</h3>
+          <p onClick={()=> {setYear(2022)}} style={{fontSize: '20px'}}>2022</p>
+          <p onClick={()=> {setYear(2023)}} style={{fontSize: '20px'}}>2023</p>
+          <p onClick={()=> {setYear(2024)}} style={{fontSize: '20px'}}>2024</p>
           </Link>
         </div>
       </div>

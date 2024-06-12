@@ -1,9 +1,7 @@
 import React from "react";
 import "./cardcss.css";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
-import { useContext } from "react";
-import { AppContext } from "../AppContext";
+
 
 const ScienceImg = "https://static.vecteezy.com/system/resources/thumbnails/006/204/262/small/education-chemistry-and-biology-concept-vector.jpg"
 
@@ -19,20 +17,9 @@ const PheImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBFaZ8Fix
 
 function CardSample({ title  , Image}) {
 
-  const {setStreamroute } = useContext(AppContext)
-
-  const handleClick = () => {
-    setStreamroute(title)
-    // document.title = {title}
-    // console.log("hello")
-  };
-
-
-  
-
   return (
     <Link to={`/${title}`} style={{ textDecoration: "none"}}>
-      <div className="card" onClick={handleClick} style={{backgroundImage: `url("${Image}")`}}>
+      <div className="card" style={{backgroundImage: `url("${Image}")`}}>
         <h1
           style={{
             padding: "25px",
@@ -48,29 +35,31 @@ function CardSample({ title  , Image}) {
 
 function Card() {
   return (
+    
     <div className="card-containerrr">
       <CardSample
         title="Language"
         Image={EnglishImg}
-      />
+        />
       <CardSample title="Science" content="" Image={ScienceImg} />
       <CardSample
         title="Commerce"
-       Image={commerceImg}
-      />
+        Image={commerceImg}
+        />
       <CardSample
         title="Humanities"
         Image={HumanitiesImg}
-      />
+        />
       <CardSample
         title="General Test"
-       Image={GT}
-      />
+        Image={GT}
+        />
       <CardSample
         title="Physical Education"
-       Image={PheImg}
-      />
+        Image={PheImg}
+        />
     </div>
+   
   );
 }
 

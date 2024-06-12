@@ -9,6 +9,8 @@ import { useLocation } from "react-router-dom";
 import { AppContext } from "../AppContext";
 import { storageDB } from "../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
+import LoadingBar from 'react-top-loading-bar'
+
 
 const Downloadallbtn = ({ year }) => {
   const [ZipRoute , setZipRoute ] = useState('')
@@ -38,9 +40,6 @@ const Downloadallbtn = ({ year }) => {
       const fileList = await listAll(storageRefee);
       fileList.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
-          // console.log(url)
-          // setZipUrl(url)
-          // console.log(ZipUrl)
           handleAllDownload(url)
         });
       });
@@ -66,6 +65,8 @@ const Downloadallbtn = ({ year }) => {
 
 export default function TablePage() {
   const location = useLocation();
+  
+const [tracker , setTracker] = useState(0)
 
   const { year } = useContext(AppContext);
   const [route, setRoute] = useState("");
@@ -96,11 +97,14 @@ export default function TablePage() {
       });
     };
     fetchFiles();
-  });
+    setTracker(100);
+  },[route]);
 
   return (
     <>
+    <LoadingBar progress={tracker} color="#FF6650" shadow="true" height={'5px'}/>
       <NavBar />
+      
       <div className="card-container">
         <Downloadallbtn year={year} />
         {fileUrls.map((file, id) => (

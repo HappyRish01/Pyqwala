@@ -13,16 +13,13 @@ import AboutPage from "./pages/AboutPage";
 
 function App() {
 
-  const [streamRoute , setStreamroute] = useState("Physics");
-  const [subjectRoute , setSubjectroute] = useState('');
+  // const [streamRoute , setStreamroute] = useState("Physics");
+  // const [subjectRoute , setSubjectroute] = useState('');
 
   const [year , setYear ] = useState(2023);
  
-
-
-
   return (
-    <AppContext.Provider value={{streamRoute , setStreamroute , year , setYear , subjectRoute , setSubjectroute }}>
+    <AppContext.Provider value={{  year , setYear  }}>
       <Router>
         <div>
           <Routes>

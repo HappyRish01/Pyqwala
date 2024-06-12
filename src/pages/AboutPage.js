@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState , } from "react";
 import NavBar from "../components/NavBar";
 import "./css/AboutPagecss.css"
 import { PiDotFill } from "react-icons/pi";
+import { Helmet } from "react-helmet-async";
 
 const aboutUsImage =
   "https://t4.ftcdn.net/jpg/06/13/46/63/360_F_613466370_z5ACkTKDSLuyWlOAagyxoQrt95v1ptIV.jpg";
 function AboutPage() {
+  const [isAboutLoaded , setIsAboutLoaded] = useState(false)
 
-    useState(()=>{
+
+    useEffect(()=>{
         window.scrollTo(0, 0)
-    })
+        setIsAboutLoaded(true)
+    },[])
     
   return (
     <>
-      <NavBar />
+    <Helmet>
+    <link rel="canonical" href="/About" />
+    <title>About us</title>
+      <meta name='description' content='This is our about us page that tell us about our mission towards the society and aspirants'/>
+    
+    </Helmet>
+      <NavBar isAboutLoaded={isAboutLoaded}/>
         <img src={aboutUsImage} alt="About Us" className="about-us-image" />
       <div className="about-us-container">
         <div className="about-us-content">
@@ -120,13 +130,8 @@ function AboutPage() {
 
           <p>
      
-            <b>Email:</b> support@pastpapershub.com
+            <b>Email:</b> pyqwaladost@gmail.com
           </p>
-
-          {/* <p> <b>Phone:</b> +123-456-7890</p> */}
-
-          {/* <p> <b>Address:</b> 123 Education Lane, Knowledge City, ED 45678</p> */}
-
           <p>
             Thank you for choosing Pyq Wala Dost. Your success is our priority!
           </p>

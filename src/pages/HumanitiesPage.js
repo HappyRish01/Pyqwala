@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import '../components/cardcss.css'
 import { Link } from "react-router-dom";
+import {Helmet} from 'react-helmet-async'
 
 const His = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHIK85L-jGP1hBHIkE4yoMRGrYH5tgMeRug&s";
 const Pol = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdoghmVPHcUbmFl1tzP0f1rWUX_ZR9jcpnw&s";
@@ -12,15 +13,9 @@ const Soc = "https://static.vecteezy.com/system/resources/thumbnails/001/759/771
 
 function CardSample({ title  , Image}) {
     
-  
-    const handleClick = () => {
-    
-    
-    };
-  
     return (
       <Link to={`/Humanities/${title}`} style={{ textDecoration: "none"}}>
-        <div className="card" onClick={handleClick} style={{backgroundImage: `url("${Image}")`}}>
+        <div className="card" style={{backgroundImage: `url("${Image}")`}}>
           <h1
             style={{
               padding: "25px",
@@ -37,6 +32,11 @@ function CardSample({ title  , Image}) {
 export default function HumanitiesPage() {
   return (
     <>
+     <Helmet>
+      <title>CUET Arts | Humanities Previous Year Questions | Free Download PDFs effortlessly</title>
+      <meta name='description' content='CUET Previous Year Question Paper of Arts stream: Click on the cards to directly download the CUET PYQs' />
+      <link rel="canonical" href="/Humanities" />
+    </Helmet>
     <NavBar />
     
     <div className="card-containerrr">

@@ -36,7 +36,7 @@ function Footer() {
    
     <div className="footer-section">
         <h3 >Contact Us</h3>
-        <p className='email'>Email: rishk219@gmail.com</p>
+        <p className='email'>Email: pyqwaladost@gmail.com</p>
     </div>
 
     
@@ -44,7 +44,7 @@ function Footer() {
         <h3>Follow Us</h3>
         <div className="social-media">
             <a href="https://x.com/AlokDix79383859" target='_blank' rel="noreferrer"><i className="fab fa-twitter"></i> <RiTwitterXLine className='icon twitter'/> Twitter</a>
-            <a href="https://www.linkedin.com/in/alok-dixit-061814282/" target='_blank' rel="noreferrer"><i className="fab fa-linkedin-in"></i> <FaLinkedin className=' icon linkedin'/> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/rish-kumar-487472237/" target='_blank' rel="noreferrer"><i className="fab fa-linkedin-in"></i> <FaLinkedin className=' icon linkedin'/> LinkedIn</a>
             <a href="https://www.instagram.com/me_rish1602/" target='_blank' rel="noreferrer"><i className="fab fa-instagram"></i><FaInstagram className='icon insta'/> Instagram</a>
         </div>
     </div>

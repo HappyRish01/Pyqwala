@@ -1,10 +1,9 @@
 import React from 'react'
-
+import { Helmet } from 'react-helmet-async';
 import '../components/cardcss.css'
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar'
-import { AppContext } from '../AppContext';
-import { useContext } from 'react';
+
 
 const PHYimg = "https://static.vecteezy.com/system/resources/thumbnails/001/759/760/small/physics-supplies-and-books-vector.jpg";
 const ChEimg = "https://static.vecteezy.com/system/resources/thumbnails/002/863/737/small/chemistry-laboratory-experiment-tool-icon-vector.jpg";
@@ -13,18 +12,11 @@ const Mathimg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKAbnA-aE
 const Csimg = "https://static.vecteezy.com/system/resources/thumbnails/001/859/240/small/back-to-school-computer-book-pencil-planets-rocket-science-elementary-education-cartoon-free-vector.jpg"
 
 function CardSample({ title  , Image}) {
-  
-  const {setSubjectroute} = useContext(AppContext)
-  
-  
-    const handleClick = () => {
-    
-      setSubjectroute(title)
-    };
+
   
     return (
       <Link to={`/Science/${title}`} style={{ textDecoration: "none"}}>
-        <div className="card" onClick={handleClick} style={{backgroundImage: `url("${Image}")`}}>
+        <div className="card"  style={{backgroundImage: `url("${Image}")`}}>
           <h1
             style={{
               padding: "25px",
@@ -41,6 +33,13 @@ function CardSample({ title  , Image}) {
 export default function SciencePage() {
   return (
     <>
+    <Helmet>
+      <title>CUET Science Previous Year Questions | Free Download PDFs effortlessly</title>
+      <meta name='description' content='CUET Previous Year Question Paper of Science stream: Click on the cards to directly download the CUET PYQs' />
+      <link rel="canonical" href="/Science" />
+      
+    </Helmet>
+
     <NavBar />
     
     <div className="card-containerrr">
