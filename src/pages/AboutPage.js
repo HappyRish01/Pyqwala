@@ -4,8 +4,7 @@ import "./css/AboutPagecss.css"
 import { PiDotFill } from "react-icons/pi";
 import { Helmet } from "react-helmet-async";
 
-const aboutUsImage =
-  "https://t4.ftcdn.net/jpg/06/13/46/63/360_F_613466370_z5ACkTKDSLuyWlOAagyxoQrt95v1ptIV.jpg";
+const aboutUsImage = "https://t4.ftcdn.net/jpg/06/13/46/63/360_F_613466370_z5ACkTKDSLuyWlOAagyxoQrt95v1ptIV.jpg";
 function AboutPage() {
   const [isAboutLoaded , setIsAboutLoaded] = useState(false)
 

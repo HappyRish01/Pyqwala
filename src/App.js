@@ -13,9 +13,6 @@ import AboutPage from "./pages/AboutPage";
 
 function App() {
 
-  // const [streamRoute , setStreamroute] = useState("Physics");
-  // const [subjectRoute , setSubjectroute] = useState('');
-
   const [year , setYear ] = useState(2023);
  
   return (
