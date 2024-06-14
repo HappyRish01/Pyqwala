@@ -1,4 +1,5 @@
 https://pyqwala.online/
+https://pyqwala.online/about
 https://pyqwala.online/Language
 https://pyqwala.online/Science
 https://pyqwala.online/Commerce

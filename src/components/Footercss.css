@@ -86,7 +86,9 @@
 .email:hover {
     color:aqua;
 }
-
+.email{
+    font-size: larger;
+}
 .footer-bottom {
     text-align: center;
     padding: 20px 0;

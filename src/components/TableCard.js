@@ -1,8 +1,7 @@
 import React from "react";
 import "./TableCardcss.css";
 import { PiDownloadSimple } from "react-icons/pi";
-// import { storageDB } from "../firebase";
-// import { ref } from "firebase/storage";
+
 
 export default function TableCard({ title, link }) {
 

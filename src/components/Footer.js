@@ -28,7 +28,7 @@ function Footer() {
     <div className="footer-section">
         <h3>Resources</h3>
         <ul >
-            <li><a href="/"  className='email'>Help</a></li>
+            <li><div className='email' style={{cursor: 'pointer'}}>Help</div></li>
             <li><div  className='email' style={{cursor: 'pointer'}}>Support - {upi}</div></li>
         </ul>
     </div>
